@@ -8,7 +8,7 @@ console.log("Hello World")
 app.get("/",(req,res)=>{
     const absolutePath = __dirname+"/views/index.html"
     //console.log(absolutePath)
-    res.send("Hello Express")
+    //res.send("Hello Express")
     res.send(absolutePath)
 })
 
