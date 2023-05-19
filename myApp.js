@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
     //serve the static file using the express.static. it's use to serve the static file
 })
 
-app.use(express.static(__dirname+"/public"))
+app.use(express.static(__dirname+"/public/style.css"))
 
 
 
