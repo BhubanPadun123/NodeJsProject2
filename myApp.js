@@ -1,10 +1,12 @@
 let express = require('express');
 let app = express();
+let path = require('path')
 
 
 
 
-console.log("Hello World")
+//serve the css file 
+app.use('/public', express.static(path.join(__dirname, 'public')));
 app.get("/",(req,res)=>{
     const absolutePath = __dirname+"/views/index.html"
     //console.log(absolutePath)
@@ -15,7 +17,6 @@ app.get("/",(req,res)=>{
     //serve the static file using the express.static. it's use to serve the static file
 })
 
-app.use(express.static(__dirname+"/public/style.css"))
 
 
 
